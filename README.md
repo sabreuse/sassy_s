@@ -22,7 +22,7 @@ Now, clone me.
 3. From the command line:
 
 	    cd path/to/your/theme
-	    sass watch --sassy_s/style.scss:style.css
+	    sass --watch sassy_s/style.scss:style.css
 
 	(Or use your preferred Sass GUI to set your input to the sassy_s directory and your output to the main stylesheet.)
 
