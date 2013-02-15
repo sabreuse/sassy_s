@@ -18,40 +18,19 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-// Some common variables and mixins to get you started.
-// Variables allow you to re-use colors, sizes, and other values without repeating
-// yourself. This means that changes that should be small, such as tweaking the
-// coloring or the sizing, can be done in one place, not all over the stylesheet.
-
-$base-font: sans-serif;
-$header-font: $base-font; // you can refer to other variables
-
-// Mixins are usually bigger than just one value. They can also accept parameters.
-// Use them like so: selector {@include mixin();}, or see the _globals file for examples!
-
-@mixin clearfix() {
-    &:before, &:after {
-        content: "\0020";
-        display: block;
-        height: 0;
-        overflow: hidden;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-@mixin hoverActiveFocus($property, $value) {
-    &:hover, &:active, &:focus {
-        #{$property}: $value;
-    }
-}
-
 // reset styles should stay at the top
 @import 'reset';
 
+// configure the style from settings
+@import 'settings';
+
+// move mixins to their own partial
+@import 'mixins';
+
 // feel free to add any new files you want; if you add them this list they'll be included
 @import 'global';
+@import 'typography';
+@import 'layout';
 @import 'menu';
 @import 'content';
 @import 'postformats';
