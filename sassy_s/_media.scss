@@ -1,27 +1,6 @@
 /* =Media
 ----------------------------------------------- */
 
-.site-header,
-.entry-content,
-.comment-content,
-.widget {
-	img {
-		max-width: 100%; /* Fluid images for posts, comments, and widgets */
-	}
-}
-.site-header img,
-.entry-content img,
-.comment-content img[height],
-img[class*="align"],
-img[class*="wp-image-"] {
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
-.site-header img,
-.entry-content img,
-img.size-full {
-	max-width: 100%;
-	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
-}
 .entry-content,
 .comment-content {
 	img.wp-smiley {
