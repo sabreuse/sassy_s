@@ -1,18 +1,19 @@
 /* =Navigation
 ----------------------------------------------- */
 
-.site-content {
-	.site-navigation {
-		margin: 0 0 $vspacing;
-		overflow: hidden;
-	}
-	.nav-previous {
+.site-content [class*="navigation"] {
+	margin: 0 0 $vspacing;
+	overflow: hidden;
+
+	.previous {
 		float: left;
 		width: 50%;
 	}
-	.nav-next {
+
+	.next {
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
+
 }
