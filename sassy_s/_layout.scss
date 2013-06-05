@@ -2,113 +2,92 @@ $layout: null !default;
 
 // Layout: Content-Sidebar
 @if $layout == content-sidebar {
-	#primary {
+	.content-area {
 		float: left;
 		margin: 0 -25% 0 0;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 25% 0 0;
 	}
-	#secondary { /* Sidebar 1 */
+	.site-main .widget-area { /* Sidebar 1 */
 		float: right;
 		overflow: hidden;
 		width: 25%;
 	}
-	#tertiary { /* Sidebar 2 */
-		clear: right;
-	}
 }
 // Layout: Content-Sidebar-Sidebar
 @else if $layout == content-sidebar-sidebar {
-	#primary {
+	.content-area {
 		float: left;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 40% 0 0;
 	}
-	#main .widget-area {
+	.site-main .widget-area {
 		float: left;
+		margin: 0 0 0 -40%;
 		overflow: hidden;
 		width: 20%;
-	}
-	#secondary { /* Sidebar 1 */
-		margin: 0 0 0 -40%;
-	}
-	#tertiary { /* Sidebar 2 */
-		margin: 0 0 0 -20%;
 	}
 }
 // Layout: Sidebar-Content
 @else if $layout == sidebar-content {
-	#primary {
+	.content-area {
 		float: right;
 		margin: 0 0 0 -25%;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 0 0 25%;
 	}
-	#secondary { /* Sidebar 1 */
+	.site-main .widget-area { /* Sidebar 1 */
 		float: left;
 		overflow: hidden;
 		width: 25%;
 	}
-	#tertiary { /* Sidebar 2 */
-		clear: left;
-	}
 }
 // Layout: Sidebar-Content-Sidebar
 @else if $layout == sidebar-content-sidebar {
-	#primary {
+	.content-area {
 		float: left;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 20%;
 	}
-	#main .widget-area {
+	.site-main .widget-area {
 		float: left;
+		margin: 0 0 0 -100%;
 		overflow: hidden;
 		width: 20%;
-	}
-	#secondary { /* Sidebar 1 */
-		margin: 0 0 0 -100%;
-	}
-	#tertiary { /* Sidebar 2 */
-		margin: 0 0 0 -20%;
 	}
 }
 // Layout: Content-Sidebar-Sidebar
 @else if $layout == content-sidebar-sidebar {
-	#primary {
+	.content-area {
 		float: left;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 40% 0 0;
 	}
-	#main .widget-area {
+	.site-main .widget-area {
 		float: left;
+		margin: 0 0 0 -40%;
 		overflow: hidden;
 		width: 20%;
-	}
-	#secondary { /* Sidebar 1 */
-		margin: 0 0 0 -40%;
-	}
-	#tertiary { /* Sidebar 2 */
-		margin: 0 0 0 -20%;
 	}
 }
 // Layout: Sidebar-Sidebar-Content
 @else if $layout == sidebar-sidebar-content {
-	#primary {
+	.content-area {
 		float: right;
 		margin: 0 0 0 -40%;
 		width: 100%;
 	}
-	#content {
+	.site-content {
 		margin: 0 0 0 40%;
 	}
 	#main .widget-area {
