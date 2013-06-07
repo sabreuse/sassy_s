@@ -7,8 +7,7 @@ $base-font: sans-serif;
 $header-font: $base-font; // you can refer to other variables
 
 /* Supported Values for $layout:
-  content-sidebar | content-sidebar-sidebar | sidebar-content | sidebar-content-sidebar | sidebar-sidebar-content
+  null | content-sidebar | content-sidebar-sidebar | sidebar-content | sidebar-content-sidebar | sidebar-sidebar-content
 */
-$layout: sidebar-content;
-
+$layout: null !default;
 $vspacing: 1.5em;
