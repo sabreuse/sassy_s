@@ -14,22 +14,7 @@
 		width: 25%;
 	}
 }
-// Layout: Content-Sidebar-Sidebar
-@else if $layout == content-sidebar-sidebar {
-	.content-area {
-		float: left;
-		width: 100%;
-	}
-	.site-content {
-		margin: 0 40% 0 0;
-	}
-	.site-main .widget-area {
-		float: left;
-		margin: 0 0 0 -40%;
-		overflow: hidden;
-		width: 20%;
-	}
-}
+
 // Layout: Sidebar-Content
 @else if $layout == sidebar-content {
 	.content-area {
@@ -44,54 +29,6 @@
 		float: left;
 		overflow: hidden;
 		width: 25%;
-	}
-}
-// Layout: Sidebar-Content-Sidebar
-@else if $layout == sidebar-content-sidebar {
-	.content-area {
-		float: left;
-		width: 100%;
-	}
-	.site-content {
-		margin: 0 20%;
-	}
-	.site-main .widget-area {
-		float: left;
-		margin: 0 0 0 -100%;
-		overflow: hidden;
-		width: 20%;
-	}
-}
-// Layout: Content-Sidebar-Sidebar
-@else if $layout == content-sidebar-sidebar {
-	.content-area {
-		float: left;
-		width: 100%;
-	}
-	.site-content {
-		margin: 0 40% 0 0;
-	}
-	.site-main .widget-area {
-		float: left;
-		margin: 0 0 0 -40%;
-		overflow: hidden;
-		width: 20%;
-	}
-}
-// Layout: Sidebar-Sidebar-Content
-@else if $layout == sidebar-sidebar-content {
-	.content-area {
-		float: right;
-		margin: 0 0 0 -40%;
-		width: 100%;
-	}
-	.site-content {
-		margin: 0 0 0 40%;
-	}
-	#main .widget-area {
-		float: left;
-		overflow: hidden;
-		width: 20%;
 	}
 }
 
