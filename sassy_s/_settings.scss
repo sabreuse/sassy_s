@@ -12,8 +12,7 @@ $text-color: #404040;
 $link-color: royalblue;
 $link-visited: purple;
 
-/* Supported Values for $layout:
-  null | content-sidebar | sidebar-content
-*/
+// Supported Values for $layout:
+//  null | content-sidebar | sidebar-content
 $layout: null !default;
 $vspacing: 1.5em;
