@@ -165,7 +165,6 @@ input[type="submit"]:active {
 }
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 input[type="search"] {
