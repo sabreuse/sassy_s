@@ -31,7 +31,7 @@
 // Galleries
 .gallery {
 
-	@include clearfix();
+	@extend %clearfix;
 
 	margin-bottom: $vspacing;
 
