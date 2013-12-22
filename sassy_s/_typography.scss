@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $text-color;
 	font-family: $base-font;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -117,9 +117,9 @@ img {
 
 /* Links */
 a {
-	color: royalblue;
-	@include hoverActiveFocus(color, midnightblue);
+	color: $link-color;
+	@include hoverActiveFocus(color, darken($link-color, 30%));
 }
 a:visited {
-	color: purple;
+	color: $link-visited;
 }

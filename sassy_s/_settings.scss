@@ -6,6 +6,12 @@
 $base-font: sans-serif;
 $header-font: $base-font; // you can refer to other variables
 
+// base color scheme
+$body-background: #fff;
+$text-color: #404040;
+$link-color: royalblue;
+$link-visited: purple;
+
 /* Supported Values for $layout:
   null | content-sidebar | content-sidebar-sidebar | sidebar-content | sidebar-content-sidebar | sidebar-sidebar-content
 */
