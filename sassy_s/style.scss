@@ -22,11 +22,11 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-// reset styles should stay at the top
-@import 'reset';
-
 // configure the style from settings
 @import 'settings';
+
+// reset styles should stay at the top
+@import 'reset';
 
 // move mixins to their own partial
 @import 'mixins';
