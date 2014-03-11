@@ -119,7 +119,7 @@ img {
 a {
 	color: $link-color;
 	@include hoverActiveFocus {
-		color, darken($link-color, 30%);
+		color: darken($link-color, 30%);
 	}
 }
 a:visited {
