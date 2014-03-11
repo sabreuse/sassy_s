@@ -8,8 +8,8 @@
     }
 }
 
-@mixin hoverActiveFocus($property, $value) {
+@mixin hoverActiveFocus() {
     &:hover, &:active, &:focus {
-        #{$property}: $value;
+        @content;
     }
 }

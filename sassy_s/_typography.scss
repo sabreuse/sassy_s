@@ -118,7 +118,9 @@ img {
 /* Links */
 a {
 	color: $link-color;
-	@include hoverActiveFocus(color, darken($link-color, 30%));
+	@include hoverActiveFocus {
+		color: darken($link-color, 30%);
+	}
 }
 a:visited {
 	color: $link-visited;
